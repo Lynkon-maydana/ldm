@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio de Programador</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='estilo.css') }}">
+</head>
+<body>
+    <header class="bg-dark text-white py-3">
+        <div class="container">
+            <h1 class="text-center">Lynkon Maydana</h1>
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#habilidades">Habilidades</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#projetos">Projetos</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section id="sobre" class="section py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Sobre Mim</h2>
+            <p class="text-center">Sou um programador apaixonado por tecnologia e desenvolvimento de software. Tenho experiência em diversas linguagens de programação e gosto de resolver problemas complexos com código limpo e eficiente.</p>
+        </div>
+    </section>
+
+    <section id="habilidades" class="section py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-4">Habilidades</h2>
+            <ul class="list-group list-group-flush text-center">
+                <li class="list-group-item">HTML & CSS</li>
+                <li class="list-group-item">JavaScript</li>
+                <li class="list-group-item">Python</li>
+                <li class="list-group-item">React</li>
+                <li class="list-group-item">Node.js</li>
+                <li class="list-group-item">Banco de Dados (SQL, NoSQL)</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="projetos" class="section py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Projetos</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h3 class="card-title">Projeto Hamburgueria</h3>
+                            <p class="card-text">Criação do site em desenvolvimento de Hamburgueria Max Burgers, juntamento com mais dois colegas de trabalho, Gustavo e Beatriz. Tecnologias usadas: HTML, CSS, JavaScript.</p>
+                            <a href="{{ url_for('portifolio') }}" class="btn btn-primary">Ver Projeto</a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato" class="section py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-4">Contato</h2>
+            <p class="text-center">Se você gostou do meu trabalho e deseja entrar em contato, você pode me enviar um e-mail em: <a href="mailto:lynkon.maydana363@al.unieduk.com.br">lynkon.maydana363@al.unieduk.com.br</a>.</p>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white py-3">
+        <div class="container text-center">
+            <p>&copy; 2024 Lynkon Maydana. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
